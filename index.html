@@ -19,7 +19,7 @@
       .container {
         height: 1000px;
         width: 100%;
-        background-color: lightgrey;
+        background-color: white;
       }
       .navbar {
         height: 100px;
@@ -107,7 +107,11 @@
         padding-left: 8px;
         border-right: 1px solid white;
       }
-      .cont-3 > span:last-child > a {
+      .cont-3 > span:first-child > a {
+        padding-left: 0;
+      }
+
+      .cont-3 > span > a.last {
         border-right: none;
       }
     </style>
@@ -155,7 +159,7 @@
           ><span><a href="">water bottle</a></span
           ><span><a href="">smart watch</a></span
           ><span><a href="">laptop</a></span>
-          <span><a href="">makeup</a></span>
+          <span><a class="last" href="">makeup</a></span>
         </div>
       </div>
     </div>
