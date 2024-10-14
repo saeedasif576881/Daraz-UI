@@ -114,6 +114,95 @@
       .cont-3 > span > a.last {
         border-right: none;
       }
+      .content {
+        /* Renamed from .body to .content */
+        color: black;
+        /* display: inline-block; */
+        display: flex;
+        padding-left: 100px;
+        padding-top: 5px;
+        font-weight: 400px;
+        font-size: 13px;
+        font-family: Roboto-Medium;
+        line-height: 40px;
+      }
+      .content > a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .content > img {
+        align-self: center;
+        margin-left: 20px;
+      }
+      .homesec > span {
+        padding: 8px;
+        font-size: 14px;
+        color: gray;
+      }
+
+      .homesec {
+        margin-top: 17px;
+        padding-left: 85px;
+        padding-bottom: 17px;
+        position: relative;
+      }
+
+      .homesec > .blue {
+        color: rgb(6, 148, 224);
+      }
+
+      .line-break {
+        width: calc(100% - 180px);
+        margin: 0px 90px;
+        border-bottom: 1px solid rgb(233, 232, 232);
+      }
+      .cata {
+        margin-top: 20px;
+        font-size: 15px;
+        padding-left: 50px;
+        height: 900px;
+        width: 225px;
+        margin-left: 20px;
+      }
+      .cont3 {
+        display: flex;
+        margin-left: 20px;
+      }
+
+      .gridheader {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        width: 1280px;
+        margin-left: -100px;
+      }
+      .gridheader Select {
+        padding: 10px 7px;
+        width: 200px;
+        color: gray;
+        border-radius: 13px;
+        margin-right: 20px;
+      }
+      .custom-line {
+        width: 80%;
+        margin-left: 90px;
+        margin-top: 20px;
+        border-bottom: 1px solid rgb(233, 232, 232);
+      }
+      .custom-line1 {
+        border-bottom: 1px solid rgb(233, 232, 232);
+        width: 230px;
+        margin-top: 22px;
+      }
+      .custom-line2 {
+        border-bottom: 1px solid rgb(233, 232, 232);
+        width: 170px;
+        margin-top: 22px;
+      }
+      .small {
+        font-size: small;
+        color: rgb(0, 0, 0);
+      }
     </style>
   </head>
   <body>
@@ -160,6 +249,260 @@
           ><span><a href="">smart watch</a></span
           ><span><a href="">laptop</a></span>
           <span><a class="last" href="">makeup</a></span>
+        </div>
+      </div>
+      <div class="content">
+        <a>Categories</a>
+        <img height="12px" src="./Assets/DownArrow.png" alt="DownArrow" />
+      </div>
+      <div class="homesec">
+        <span class="blue">Home</span>
+        <img height="12px" src="./Assets/1.png" alt="greater sign" />
+        <span class="blue">Mobiles & Tablets</span
+        ><img height="12px" src="./Assets/1.png" alt="greater sign" />
+        <span>Mobiles</span>
+      </div>
+      <div class="line-break"></div>
+      <div class="cont3">
+        <div class="cata">
+          <p>Catagory</p>
+          <p style="margin-top: 10px; color: #fe540c; font-weight: bold">
+            Mobiles
+          </p>
+          <div class="custom-line1"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Brand
+          </p>
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> Xiaomi</li>
+            <li><input type="checkbox" name="" id="" /> Xiaomi</li>
+            <li><input type="checkbox" name="" id="" /> Xiaomi</li>
+            <li><input type="checkbox" name="" id="" /> OPPO</li>
+            <li><input type="checkbox" name="" id="" /> Infinix</li>
+            <li><input type="checkbox" name="" id="" /> Xiaomi</li>
+            <li><input type="checkbox" name="" id="" />E-tachi mobile</li>
+            <li><input type="checkbox" name="" id="" /> Motrolla</li>
+            <li><input type="checkbox" name="" id="" /> Xiaomi Redmi</li>
+            <li><input type="checkbox" name="" id="" /> Daraz Like New</li>
+          </ul>
+          <div class="custom-line2"></div>
+
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Service and Promotion
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> Free Delivery</li>
+            <li><input type="checkbox" name="" id="" /> Flash Sale</li>
+            <li><input type="checkbox" name="" id="" /> 10. 10</li>
+            <li><input type="checkbox" name="" id="" /> Voucher Max</li>
+            <li><input type="checkbox" name="" id="" /> Mall</li>
+            <li><input type="checkbox" name="" id="" /> Coins</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Shipped From
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> Punjab</li>
+            <li><input type="checkbox" name="" id="" /> Sindh</li>
+            <li><input type="checkbox" name="" id="" /> Khyber Pakhtunkhwa</li>
+            <li><input type="checkbox" name="" id="" /> Islamabad</li>
+            <li><input type="checkbox" name="" id="" /> Azad Kashmir</li>
+            <li>
+              <input type="checkbox" name="" id="" /> Frederally Administerd
+              Tribal
+            </li>
+            <li><input type="checkbox" name="" id="" /> Balochistan</li>
+            <li><input type="checkbox" name="" id="" /> local</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <div class="custom-line2"></div>
+          <div class="custom-line2"></div>
+
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Warranty Type
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> Brand Warranty</li>
+            <li><input type="checkbox" name="" id="" /> Sindh</li>
+            <li><input type="checkbox" name="" id="" /> No Warranty</li>
+            <li><input type="checkbox" name="" id="" /> Seller Warranty</li>
+            <li>
+              <input type="checkbox" name="" id="" /> Local Seller warranty
+            </li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Storage Capacity
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> 128GB</li>
+            <li><input type="checkbox" name="" id="" /> 256GB</li>
+            <li><input type="checkbox" name="" id="" /> 64GB</li>
+            <li><input type="checkbox" name="" id="" /> 32GB</li>
+            <li><input type="checkbox" name="" id="" /> 512GB</li>
+            <li><input type="checkbox" name="" id="" /> 16GB</li>
+            <li><input type="checkbox" name="" id="" /> 300MB</li>
+            <li><input type="checkbox" name="" id="" /> 8GB</li>
+            <li><input type="checkbox" name="" id="" /> No Storage</li>
+            <li><input type="checkbox" name="" id="" /> 128MB</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Number of Cameras
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> 2</li>
+            <li><input type="checkbox" name="" id="" /> 3</li>
+            <li><input type="checkbox" name="" id="" /> 4</li>
+            <li><input type="checkbox" name="" id="" /> 1</li>
+            <li><input type="checkbox" name="" id="" /> 5</li>
+            <li><input type="checkbox" name="" id="" /> 6</li>
+            <li><input type="checkbox" name="" id="" /> 9</li>
+            <li><input type="checkbox" name="" id="" /> 7</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Year
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> 2020</li>
+            <li><input type="checkbox" name="" id="" /> 2019</li>
+            <li><input type="checkbox" name="" id="" /> 2018</li>
+            <li><input type="checkbox" name="" id="" /> 2013</li>
+            <li><input type="checkbox" name="" id="" /> 2017</li>
+            <li><input type="checkbox" name="" id="" /> 2016</li>
+            <li><input type="checkbox" name="" id="" /> Below 2000</li>
+            <li><input type="checkbox" name="" id="" /> 2015</li>
+            <li><input type="checkbox" name="" id="" /> 2003</li>
+            <li><input type="checkbox" name="" id="" /> 2007</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Protection
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li>
+              <input type="checkbox" name="" id="" /> Corning Gorilla Glass 1
+            </li>
+            <li>
+              <input type="checkbox" name="" id="" /> Corning Gorilla Glass 5
+            </li>
+            <li>
+              <input type="checkbox" name="" id="" /> Corning Gorilla Glass 3
+            </li>
+            <li>
+              <input type="checkbox" name="" id="" /> Corning Gorilla Glass 2
+            </li>
+            <li><input type="checkbox" name="" id="" /> Plastic</li>
+            <li>
+              <input type="checkbox" name="" id="" /> Corning Gorilla Glass 6
+            </li>
+            <li>
+              <input type="checkbox" name="" id="" /> Scratch Resistant Glass
+            </li>
+            <li>
+              <input type="checkbox" name="" id="" /> Corning Gorilla Glass 4
+            </li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Color Family
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> Black</li>
+            <li><input type="checkbox" name="" id="" /> Blue</li>
+            <li><input type="checkbox" name="" id="" /> Green</li>
+            <li><input type="checkbox" name="" id="" /> White</li>
+            <li><input type="checkbox" name="" id="" /> Gold</li>
+            <li><input type="checkbox" name="" id="" /> Multicolor</li>
+            <li><input type="checkbox" name="" id="" /> Silver</li>
+            <li><input type="checkbox" name="" id="" /> Purple</li>
+            <li><input type="checkbox" name="" id="" /> Grey</li>
+            <li><input type="checkbox" name="" id="" /> Orange</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Warranty Period
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> 1 Year</li>
+            <li><input type="checkbox" name="" id="" /> 1 Month</li>
+            <li><input type="checkbox" name="" id="" /> 2 Years</li>
+            <li><input type="checkbox" name="" id="" /> 11 Months</li>
+            <li><input type="checkbox" name="" id="" /> 6 Months</li>
+            <li><input type="checkbox" name="" id="" /> 10 Months</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Phone Features
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> Touchscreen</li>
+            <li><input type="checkbox" name="" id="" /> Wifi</li>
+            <li><input type="checkbox" name="" id="" /> Fingerprint Sensor</li>
+            <li><input type="checkbox" name="" id="" /> GPS</li>
+            <li><input type="checkbox" name="" id="" /> Gold</li>
+            <li><input type="checkbox" name="" id="" /> Face Recognition</li>
+            <li><input type="checkbox" name="" id="" /> Wifi</li>
+            <li><input type="checkbox" name="" id="" /> Fingerprint</li>
+            <li><input type="checkbox" name="" id="" /> Compass</li>
+            <li><input type="checkbox" name="" id="" /> Gyro</li>
+            <li><input type="checkbox" name="" id="" /> Expandable Memory</li>
+          </ul>
+          <div class="custom-line2"></div>
+          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
+            Condition
+          </p>
+
+          <ul style="list-style: none; font-size: small; color: gray">
+            <li><input type="checkbox" name="" id="" /> Brand New</li>
+            <li><input type="checkbox" name="" id="" /> Daraz Like New</li>
+          </ul>
+        </div>
+
+        <div class="Select">
+          <div class="gridheader">
+            <div
+              class="small"
+              style="margin-top: 7px; font-size: small; color: gray"
+            >
+              3717 items found in Mobiles
+            </div>
+            <div class="label1">
+              <label for="" class="small">Sort By:</label>
+              <select>
+                <option value="Best Match">Best Match</option>
+                <option value="Best Match">Price Low to High</option>
+                <option value="Best Match">Price High to Low</option>
+              </select>
+
+              <label for="" class="small">View:</label>
+              <img
+                style="margin-bottom: -10px"
+                height="30px"
+                src="./Assets/grid.png"
+                alt="grid"
+              />
+              <img
+                style="margin-bottom: -10px"
+                height="30px"
+                src="./Assets/list.png"
+                alt="list"
+              />
+            </div>
+          </div>
+          <div class="custom-line"></div>
         </div>
       </div>
     </div>

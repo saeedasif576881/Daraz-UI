@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daraz Mobiles</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .navbar {
+        background-color: #fe540c;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      .navbar input {
+        width: 400px;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+      }
+
+      .navbar img {
+        cursor: pointer;
+      }
+
+      .breadcrumb {
+        margin: 20px 0;
+        font-size: 14px;
+      }
+
+      .breadcrumb a {
+        text-decoration: none;
+        color: #555;
+      }
+
+      .main-content {
+        display: flex;
+      }
+
+      /* Sidebar for filtering */
+      .sidebar {
+        width: 20%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin-right: 20px;
+      }
+
+      .sidebar h3 {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+      }
+
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+
+      .sidebar ul li input {
+        margin-right: 8px;
+      }
+
+      /* Product grid */
+      .product-grid {
+        width: 80%;
+      }
+
+      .product-grid-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .product-grid-header select {
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+      }
+
+      .product-grid-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .product-card {
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-card img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .product-card h4 {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+
+      .product-card p {
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="./Assets/Daraz-logo.png" alt="Daraz Logo" height="40" />
+      <input type="text" placeholder="Search in Daraz" />
+      <img src="./Assets/shopingcart.png" alt="Shopping Cart" height="40" />
+    </div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="#">Home</a> > <a href="#">Mobiles & Tablets</a> >
+        <a href="#">Mobiles</a>
+      </div>
+
+      <div class="main-content">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <h3>Category</h3>
+          <ul>
+            <li><input type="checkbox" /> OPPO</li>
+            <li><input type="checkbox" /> Xiaomi</li>
+            <li><input type="checkbox" /> Infinix</li>
+            <li><input type="checkbox" /> Motorola</li>
+            <li><input type="checkbox" /> Huawei</li>
+          </ul>
+
+          <h3>Brand</h3>
+          <ul>
+            <li><input type="checkbox" /> Apple</li>
+            <li><input type="checkbox" /> Samsung</li>
+            <li><input type="checkbox" /> Vivo</li>
+            <li><input type="checkbox" /> Nokia</li>
+          </ul>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <div class="product-grid-header">
+            <p>3707 items found in Mobiles</p>
+            <select>
+              <option>Best Match</option>
+              <option>Price Low to High</option>
+              <option>Price High to Low</option>
+            </select>
+          </div>
+
+          <div class="product-grid-items">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+              <img src="./Assets/P1.webp" alt="Product 1" />
+              <h4>Oppo A3X</h4>
+              <p>4GB RAM - 64GB ROM</p>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+              <img src="./Assets/p2.webp" alt="Product 2" />
+              <h4>Infinix Note 40</h4>
+              <p>8GB RAM - 256GB ROM</p>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+              <img src="./Assets/p3.webp" alt="Product 3" />
+              <h4>Tecno Spark 20C</h4>
+              <p>4GB RAM - 128GB ROM</p>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+              <img src="./Assets/p4.webp" alt="Product 4" />
+              <h4>iTel S23 4G</h4>
+              <p>16GB RAM - 128/256GB ROM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
