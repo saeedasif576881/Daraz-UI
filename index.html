@@ -139,7 +139,9 @@
         font-size: 14px;
         color: gray;
       }
-
+      .min-max {
+        display: flex;
+      }
       .homesec {
         margin-top: 17px;
         padding-left: 85px;
@@ -168,6 +170,16 @@
         display: flex;
         margin-left: 20px;
       }
+      .min {
+        width: 65px;
+        height: 30px;
+        padding: 0 1px;
+      }
+      .top-grid {
+        margin: 10px 0px;
+        margin-top: 15px;
+        font-size: small;
+      }
 
       .gridheader {
         display: flex;
@@ -184,7 +196,7 @@
         margin-right: 20px;
       }
       .custom-line {
-        width: 80%;
+        width: 77%;
         margin-left: 90px;
         margin-top: 20px;
         border-bottom: 1px solid rgb(233, 232, 232);
@@ -202,6 +214,16 @@
       .small {
         font-size: small;
         color: rgb(0, 0, 0);
+      }
+      .star {
+        margin-left: -2px;
+        font-size: 20px;
+      }
+      .text1 {
+        color: grey;
+      }
+      input[type="checkbox"] {
+        border: black;
       }
     </style>
   </head>
@@ -270,9 +292,7 @@
             Mobiles
           </p>
           <div class="custom-line1"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Brand
-          </p>
+          <p class="top-grid">Brand</p>
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> Xiaomi</li>
             <li><input type="checkbox" name="" id="" /> Xiaomi</li>
@@ -287,9 +307,7 @@
           </ul>
           <div class="custom-line2"></div>
 
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Service and Promotion
-          </p>
+          <p class="top-grid">Service and Promotion</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> Free Delivery</li>
@@ -300,9 +318,7 @@
             <li><input type="checkbox" name="" id="" /> Coins</li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Shipped From
-          </p>
+          <p class="top-grid">Shipped From</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> Punjab</li>
@@ -318,12 +334,47 @@
             <li><input type="checkbox" name="" id="" /> local</li>
           </ul>
           <div class="custom-line2"></div>
+          <p class="top-grid">Price</p>
+          <div class="min-max">
+            <input class="min" type="number" placeholder="Min" />
+            <p style="padding: 2px; margin-top: 3px">-</p>
+            <input type="number" class="min" placeholder="Max" />
+            <button
+              style="
+                margin-left: 2px;
+                width: 70px;
+                border-radius: 4px;
+                background-color: #ff9153;
+                box-shadow: none;
+                border: none;
+              "
+            >
+              <img height="20px" src="./Assets/play-button.png" alt="" />
+            </button>
+          </div>
           <div class="custom-line2"></div>
+          <p class="top-grid">Rating</p>
+          <div>⭐⭐⭐⭐⭐</div>
+          <div>
+            ⭐⭐⭐⭐ <span class="star">✰</span>
+            <span class="text1">And Up</span>
+          </div>
+          <div>
+            ⭐⭐⭐<span class="star"> ✰ ✰ </span
+            ><span class="text1">And Up</span>
+          </div>
+          <div>
+            ⭐⭐ <span class="star"> ✰ ✰ ✰ </span
+            ><span class="text1">And Up</span>
+          </div>
+          <div>
+            ⭐ <span class="star"> ✰ ✰ ✰ ✰ </span
+            ><span class="text1">And Up</span>
+          </div>
+
           <div class="custom-line2"></div>
 
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Warranty Type
-          </p>
+          <p class="top-grid">Warranty Type</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> Brand Warranty</li>
@@ -335,9 +386,7 @@
             </li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Storage Capacity
-          </p>
+          <p class="top-grid">Storage Capacity</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> 128GB</li>
@@ -352,9 +401,7 @@
             <li><input type="checkbox" name="" id="" /> 128MB</li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Number of Cameras
-          </p>
+          <p class="top-grid">Number of Cameras</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> 2</li>
@@ -367,9 +414,7 @@
             <li><input type="checkbox" name="" id="" /> 7</li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Year
-          </p>
+          <p class="top-grid">Year</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> 2020</li>
@@ -384,9 +429,7 @@
             <li><input type="checkbox" name="" id="" /> 2007</li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Protection
-          </p>
+          <p class="top-grid">Protection</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li>
@@ -413,9 +456,7 @@
             </li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Color Family
-          </p>
+          <p class="top-grid">Color Family</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> Black</li>
@@ -430,9 +471,7 @@
             <li><input type="checkbox" name="" id="" /> Orange</li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Warranty Period
-          </p>
+          <p class="top-grid">Warranty Period</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> 1 Year</li>
@@ -443,9 +482,7 @@
             <li><input type="checkbox" name="" id="" /> 10 Months</li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Phone Features
-          </p>
+          <p class="top-grid">Phone Features</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> Touchscreen</li>
@@ -461,9 +498,7 @@
             <li><input type="checkbox" name="" id="" /> Expandable Memory</li>
           </ul>
           <div class="custom-line2"></div>
-          <p style="margin: 10px 0px; margin-top: 15px; font-size: small">
-            Condition
-          </p>
+          <p class="top-grid">Condition</p>
 
           <ul style="list-style: none; font-size: small; color: gray">
             <li><input type="checkbox" name="" id="" /> Brand New</li>
