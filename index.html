@@ -250,9 +250,21 @@
       }
       .fotr {
         display: flex;
-        height: 300px;
+        height: 350px;
         background-color: rgb(233, 232, 232);
         width: 100%;
+      }
+      .IMG {
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 40px;
+      }
+      .IMG > img{
+        padding: 2px;
+      }
+      .footr-draz {
+        width: 200px;
+        display: flex;
       }
       .cost-care {
         width: 360px;
@@ -274,6 +286,10 @@
       }
       .cost-care > ul > li > a:hover {
         text-decoration: underline;
+      }
+      .images {
+        /* width: 200px; */
+        display: inline-flex;
       }
     </style>
   </head>
@@ -974,8 +990,26 @@
               <li><a href="">Join Daraz Affiliate Program</a></li>
             </ul>
           </div>
-          <div>
-            
+
+          <div class="images" style="margin-top: 50px">
+            <img
+              style="padding-right: 20px"
+              height="47px"
+              src="./Assets/daraz1.png"
+              alt="Daraz"
+            />
+            <div style="display: flex; flex-direction: column">
+              <p style="display: block; color: #fe540c; margin-bottom: 4px">
+                Happy Shopping
+              </p>
+              <p style="font-size: medium; font-family: 'Arial'">Download App</p>
+            </div>
+          </div>
+          <div class="IMG">
+            <img width="auto" src="./Assets/appstore.png" alt="icon" />
+            <img src="./Assets/googleplay.png" alt="icon" />
+
+            <img src="./Assets/appgalery.png" alt="icon" />
           </div>
         </div>
       </footer>
